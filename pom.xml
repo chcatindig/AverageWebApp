@@ -4,6 +4,9 @@
   <groupId>simple</groupId>
   <artifactId>webapp</artifactId>
   <packaging>war</packaging>
+  <properties>
+  	<webXmlPath>webapp/src/main/webapp/WEB-INF/web.xml</webXmlPath>
+  </properties>
   <version>0.0.1-SNAPSHOT</version>
   <name>webapp Maven Webapp</name>
   <url>http://maven.apache.org</url>
