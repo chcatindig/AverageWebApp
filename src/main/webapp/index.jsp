@@ -47,7 +47,7 @@
 		font-family: 'Marvel';font-size: 22px;
 		}
 	.btn {
-		font-family: 'Luckiest Guy';font-size: 26px;
+		font-family: 'Marvel';font-size: 26px;
 		background-color: #4682B4;
 		color: black;
 	}
