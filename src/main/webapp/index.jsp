@@ -7,11 +7,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Luckiest Guy' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Marvel' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'>
+
 <title>Average Page</title>
 <style>
 	body {
@@ -29,7 +31,11 @@
 		font-family: 'Luckiest Guy';font-size: 26px;	
 		}
 	.text {
-		font-family: 'Luckiest Guy';font-size: 26px;	
+		font-family: 'Luckiest Guy';font-size: 26px;
+		}
+	#corners {
+		 border-radius: 25px;
+		 text-align: center;
 		}
 	.buttonsubmit {
 		font-family: 'Aclonica';font-size: 32px;
@@ -56,13 +62,13 @@
 	
 	<form action="average" method="post">
 		<p class="text-center">English</p>
-		<center><input type="text" name="english"/><center>
+		<center><input type="text" name="english" id="corners"/><center>
 		<br><center>Math </center>
-		<center><input type="text" name="math" /></center>
+		<center><input type="text" name="math" id="corners"/></center>
 		<br><center>Filipino </center>
-		<center><input type="text" name="filipino" /></center>
+		<center><input type="text" name="filipino" id="corners"/></center>
 		<br><center>Science </center>
-		<center><input type="text" name="science" /></center>
+		<center><input type="text" name="science" id="corners"/></center>
 		<br>
 		<center><input name="buttonsubmit" type="submit" class="btn btn-primary"></center>
 	</form>
