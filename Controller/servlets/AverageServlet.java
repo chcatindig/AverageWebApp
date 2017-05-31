@@ -57,9 +57,15 @@ public class AverageServlet extends HttpServlet {
 		average = (english+math+filipino+science)/noOfSubject;
 		
 		//Send average to webpage
-		request.setAttribute("average", average);
-		RequestDispatcher view = request.getRequestDispatcher("/index.jsp");
-        view.forward(request, response);
+		
+		if(english < 0 || english > 100 || math < 0 || math > 100 || filipino < 0 || filipino > 100 || science < 0 || science > 100) {
+            throw new IllegalArgumentException("Grades must be between 0 and 100, inclusive");
+        }else{
+        	request.setAttribute("average", average);
+    		RequestDispatcher view = request.getRequestDispatcher("/index.jsp");
+            view.forward(request, response);
+        }
+	
 	}
 
 }
